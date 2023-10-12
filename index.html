@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chat app</title>
+  <link rel="stylesheet" href="/index.css" />
+</head>
+
+<body id="body">
+  <div id="loginRegisteration">
+    <div id="loginForm">
+      <form class="form">
+        <label for="userName">Enter user name</label>
+        <input id="userName" type="text" required/>
+        <label for="password">Enter password</label>
+        <input id="password" type="password" minlength="8" required/>
+        <input id="login" type="button" value="Login"/>
+        <label id="loginResultLabel"></label>
+      </form>
+    </div>
+    <div id="registerationForm">
+      <form class="form">
+        <label for="rName">Enter your Name</label>
+        <input id="rName" type="text" required/>
+        <label for="rUserName">Enter user name</label>
+        <input id="rUserName" type="text" required/>
+        <label for="rPassword">Enter password</label>
+        <input id="rPassword" type="password" minlength="8" required/>
+        <input id="register" type="button" value="Register"/>
+        <label id="registerationResultLabel"></label>
+      </form>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/index.js"></script>
+</body>
+
+</html>
